@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let agenda = [
+      [1 , 'Cadastrar contato'],
+      [2 , 'Selecionar contatos'],
+      [3 , 'Alterar contato'],
+      [4 , 'Remover contato'],
+      [5 , 'Sair do sistema']
+  ]
+  for (let i = 0;i < agenda.length; i++) {
+      for (let j = 0; j < agenda[i].length; j++) {
+        document.write(agenda[i][j] + '  ');
+
+      }
+      document.write('</br>')
+    }  
+  </script>
+</body>
+
+</html>

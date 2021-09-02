@@ -6,25 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-      var numero1=
-parseInt (prompt ("Informe um número"))
-var numero2=
-parseInt (prompt("Informe outro número"))
- 
- do {
-   document.write (numero1 + "<br>")
-   numero1++
- } while (numero1<= numero2) 
-
-  
-
-
-
-
-
-
-
-
+    //Matriz
+    var dados = [
+      ["Ana", 31],
+      ["Gustavo", 22],
+      ["Rebeca", 41]
+    ]
+    //Console
+    console.table(dados)
+    //Exibir Navegador
+    for(var i=0; i<dados.length; i++){
+      document.write(dados[i][0]+ "<br>")
+    }
   </script>
 </head>
 <body>

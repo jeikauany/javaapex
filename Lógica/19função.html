@@ -6,28 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script>
-      var numero1=
-parseInt (prompt ("Informe um número"))
-var numero2=
-parseInt (prompt("Informe outro número"))
- 
- do {
-   document.write (numero1 + "<br>")
-   numero1++
- } while (numero1<= numero2) 
-
-  
-
-
-
-
-
-
-
-
+    function teclado(valor){
+      document.getElementById("texto").innerHTML = valor
+    }
   </script>
 </head>
+
 <body>
+  <input type="text" placeholder="Digite Algo" onkeyup="teclado(this.value)">
+  <p id="texto"></p>
   
 </body>
 </html>
