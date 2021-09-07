@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //Contadores
+    var contadorBruno= 0
+    var contadorCarla= 0
+    var total= 0
+    //Função
+    function votoBruno(){
+      contadorBruno+= 1
+      document.getElementById("resultados").innerHTML= "Bruno Obteve"+contadorBruno+"votos"
+      document.getElementById("resultados").innerHTML= "Carla Obteve"+contadorCarla+"votos"
+      document.getElementById("resultados").innerHTML= "<br>"
+      document.getElementById("resultados").innerHTML= "<br>Bruno Obteve"+ (100/total*contadorBruno)+"%votos"
+      document.getElementById("resultados").innerHTML= "<br>Carla Obteve"+ (100/total*contadorCarla)+"%votos"
+    }
+    function votoCarla(){
+            contadorCarla += 1
+            total+=1
+            document.getElementById("resultados").innerHTML = "Bruno obteve "+contadorBruno+" votos."
+            document.getElementById("resultados").innerHTML += "<br>Bruno obteve "+contadorCarla+" votos."
+            document.getElementById("resultados").innerHTML += "<hr>"
+            document.getElementById("resultados").innerHTML += "<br>Bruno obteve "+(100/total*contadorBruno)+"% votos."
+            document.getElementById("resultados").innerHTML += "<br>Carla obteve "+(100/total*contadorCarla)+"% votos."
+
+        }
+      </script>
+
+</head>
+<body>
+
+    <p id="resultados"></p>
+    
+    <button onclick="votoBruno()">Bruno</button>
+    <button onclick="votoCarla()">Carla</button>
+
+</body>
+</html>
+
+  </script>
+</head>
+<body>
+
+  
+</body>
+</html>
